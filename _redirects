@@ -1,2 +1,7 @@
-# Cloudflare Pages redirects
+# Specific page redirects
+/index.html /index.html 200
+/privacy.html /privacy.html 200
+/terms.html /terms.html 200
+
+# Fallback for SPA
 /* /index.html 200
