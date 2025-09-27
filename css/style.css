@@ -1404,6 +1404,9 @@ body {
     .hero-right {
         height: auto;
         min-height: 200px;
+        padding: 20px 0;
+        justify-content: flex-start;
+        gap: 20px;
     }
 
     .cards-grid {
@@ -1458,12 +1461,18 @@ body {
         text-align: center;
     }
 
+    .hero-cta-bottom {
+        margin-top: auto;
+        flex-shrink: 0;
+    }
+
     .hero-cta-bottom .btn-download-hero {
         max-width: 100%;
         padding: 12px 20px;
         font-size: 16px;
         display: block !important;
         visibility: visible !important;
+        margin: 0 auto;
     }
 
     .btn-download-white {
@@ -1488,6 +1497,9 @@ body {
     .hero-right {
         height: auto;
         min-height: 120px;
+        padding: 15px 0;
+        justify-content: flex-start;
+        gap: 15px;
     }
 
     .section-title {
@@ -1511,6 +1523,12 @@ body {
         text-align: center;
     }
 
+    .hero-cta-bottom {
+        margin-top: auto;
+        flex-shrink: 0;
+        order: 999;
+    }
+
     .hero-cta-bottom .btn-download-hero {
         padding: 10px 16px;
         font-size: 14px;
@@ -1518,6 +1536,9 @@ body {
         visibility: visible !important;
         position: relative !important;
         z-index: 999 !important;
+        margin: 10px auto 0;
+        width: 90% !important;
+        max-width: 300px !important;
     }
 
     .btn-download-white {
