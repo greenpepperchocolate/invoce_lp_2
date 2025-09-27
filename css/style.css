@@ -151,7 +151,7 @@ body {
 .hero-description {
     font-size: 16px;
     line-height: 1.8;
-    margin-bottom: 40px;
+    margin: 0;  /* 余白をリセット */
     color: #555;
 }
 
@@ -185,6 +185,7 @@ body {
     cursor: pointer;
     transition: background 0.3s;
     font-size: 20px;
+    margin-top: 20px;  /* ボタン上部に適切な余白 */
 }
 
 .btn-download-hero:hover {
@@ -192,13 +193,12 @@ body {
 }
 
 .hero-right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;  /* 統一的な間隔 */
     position: relative;
     height: 400px;
     border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
     padding: 40px 0;
 }
 
@@ -1508,7 +1508,11 @@ body {
     }
 
     .hero-title {
-        font-size: 24px;
+        font-size: 24px;  /* さらに小さく */
+    }
+
+    .hero-description {
+        font-size: 13px;
     }
 
     .hero-right {
@@ -1557,7 +1561,7 @@ body {
         width: 100%;
         max-width: 280px;
         padding: 10px 16px;
-        font-size: 14px;
+        font-size: 16px;
         margin: 0 auto;
         position: relative !important;
         z-index: 999 !important;
