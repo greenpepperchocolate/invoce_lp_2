@@ -1575,3 +1575,46 @@ body {
         font-size: 12px;
     }
 }
+
+/* 緊急用：CTAボタン強制表示（最優先） */
+.hero-cta-bottom {
+    position: relative !important;
+    z-index: 9999 !important;
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+.hero-cta-bottom .btn-download-hero {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 9999 !important;
+    background: #ff6b35 !important;
+    color: white !important;
+    border: 2px solid #ff6b35 !important;
+    min-height: 44px !important;
+    cursor: pointer !important;
+}
+
+/* モバイル専用緊急修正 */
+@media (max-width: 768px) {
+    .hero-cta-bottom {
+        margin-top: 30px !important;
+        margin-bottom: 20px !important;
+        position: relative !important;
+        z-index: 9999 !important;
+        background: rgba(255, 255, 255, 0.9) !important;
+        padding: 10px !important;
+        border-radius: 8px !important;
+    }
+
+    .hero-cta-bottom .btn-download-hero {
+        width: 90% !important;
+        max-width: 300px !important;
+        margin: 0 auto !important;
+        font-weight: bold !important;
+        text-transform: none !important;
+    }
+}
