@@ -1402,7 +1402,8 @@ body {
     }
 
     .hero-right {
-        height: 200px;
+        height: auto;
+        min-height: 200px;
     }
 
     .cards-grid {
@@ -1461,6 +1462,8 @@ body {
         max-width: 100%;
         padding: 12px 20px;
         font-size: 16px;
+        display: block !important;
+        visibility: visible !important;
     }
 
     .btn-download-white {
@@ -1483,7 +1486,8 @@ body {
     }
 
     .hero-right {
-        height: 150px;
+        height: auto;
+        min-height: 120px;
     }
 
     .section-title {
@@ -1510,6 +1514,10 @@ body {
     .hero-cta-bottom .btn-download-hero {
         padding: 10px 16px;
         font-size: 14px;
+        display: block !important;
+        visibility: visible !important;
+        position: relative !important;
+        z-index: 999 !important;
     }
 
     .btn-download-white {
