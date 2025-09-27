@@ -17,6 +17,41 @@
       gtag('config', 'AW-17602828850');
     </script>
 
+    <!-- Event snippet for 購入 conversion page -->
+    <script>
+    function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof(url) != 'undefined') {
+          window.location = url;
+        }
+      };
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17602828850/jSr4CPy_oKIbELK018lB',
+          'value': 1.0,
+          'currency': 'JPY',
+          'transaction_id': '',
+          'event_callback': callback
+      });
+      return false;
+    }
+
+    // CTAボタン用の関数：コンバージョン測定 + 新しいタブでアプリを開く
+    function trackConversionAndOpenApp() {
+      // コンバージョンを送信
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17602828850/jSr4CPy_oKIbELK018lB',
+          'value': 1.0,
+          'currency': 'JPY',
+          'transaction_id': ''
+      });
+
+      // 新しいタブでアプリを開く
+      window.open('https://invoice-converter-4ang.onrender.com/signup', '_blank');
+
+      return false;
+    }
+    </script>
+
     <!-- <link rel="stylesheet" href="css/style.css">-->
     <link rel="stylesheet" href="/css/style.css?v=20250927-2">
 </head>
@@ -40,7 +75,7 @@
                             <li><a href="#faq">FAQ</a></li>
                         </ul>
                     </nav>
-                    <button class="btn-inquiry"  onclick="window.open('https://invoice-converter-4ang.onrender.com/signup', '_blank')">無料で始める</button>
+                    <button class="btn-inquiry"  onclick="trackConversionAndOpenApp()">無料で始める</button>
                 </div>
                 <button class="mobile-menu-btn">
                     <span></span>
@@ -74,7 +109,7 @@
                             修正はプレビュー画面で直してそのまま出力可能です
                         </p>
                         <button class="btn-download-hero"
-                            onclick="window.open('https://invoice-converter-4ang.onrender.com/signup', '_blank')">今すぐ無料で始める</button>
+                            onclick="trackConversionAndOpenApp()">今すぐ無料で始める</button>
                     </div>
                 </div>
             </div>
@@ -299,7 +334,7 @@
                 <div class="download-content">
                     <div class="download-left">
                         <h2>無料トライアルを体験</h2>
-                        <button class="btn-download-white"  onclick="window.open('https://invoice-converter-4ang.onrender.com/signup', '_blank')">今すぐ無料で始める</button>
+                        <button class="btn-download-white"  onclick="trackConversionAndOpenApp()">今すぐ無料で始める</button>
                     </div>
 
                 </div>
@@ -503,7 +538,7 @@
         </div><!-- /container -->
     </section>
     <div class="hero-cta-bottom">
-        <button class="btn-download-hero" onclick="window.open('https://invoice-converter-4ang.onrender.com/signup', '_blank')">今すぐ無料で始める</button>
+        <button class="btn-download-hero" onclick="trackConversionAndOpenApp()">今すぐ無料で始める</button>
     </div>
                 </div>
             </div>
@@ -578,7 +613,7 @@
             </div>
             <br/>
             <div class="hero-cta-bottom">
-                <button class="btn-download-hero" onclick="window.open('https://invoice-converter-4ang.onrender.com/signup', '_blank')">30秒で登録する</button>
+                <button class="btn-download-hero" onclick="trackConversionAndOpenApp()">30秒で登録する</button>
             </div>
         </div>
     </section>
