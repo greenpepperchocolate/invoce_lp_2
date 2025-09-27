@@ -225,6 +225,8 @@ body {
     overflow: visible !important; /* ✅ Safariでの消失防止 */
     flex: 0 0 auto;
     width: 100%;
+    position: relative;
+    z-index: 100;
 }
 
 .hero-cta-bottom .btn-download-hero {
@@ -1409,12 +1411,14 @@ body {
         font-size: 32px;
     }
 
+    /* モバイル用のCTA表示修正 */
     .hero-right {
+        display: flex !important;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
         height: auto;
         min-height: 200px;
-        padding: 20px 0;
-        justify-content: flex-start;
-        gap: 20px;
     }
 
     .cards-grid {
@@ -1470,16 +1474,21 @@ body {
     }
 
     .hero-cta-bottom {
-        margin-top: auto;
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin-top: 20px;
         flex-shrink: 0;
     }
 
     .hero-cta-bottom .btn-download-hero {
-        max-width: 100%;
-        padding: 12px 20px;
-        font-size: 16px;
         display: block !important;
         visibility: visible !important;
+        opacity: 1 !important;
+        width: 100%;
+        max-width: 320px;
+        padding: 12px 20px;
+        font-size: 16px;
         margin: 0 auto;
     }
 
@@ -1503,11 +1512,12 @@ body {
     }
 
     .hero-right {
+        display: flex !important;
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
         height: auto;
         min-height: 120px;
-        padding: 15px 0;
-        justify-content: flex-start;
-        gap: 15px;
     }
 
     .section-title {
@@ -1532,21 +1542,25 @@ body {
     }
 
     .hero-cta-bottom {
-        margin-top: auto;
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+        margin-top: 15px;
         flex-shrink: 0;
         order: 999;
     }
 
     .hero-cta-bottom .btn-download-hero {
-        padding: 10px 16px;
-        font-size: 14px;
         display: block !important;
         visibility: visible !important;
+        opacity: 1 !important;
+        width: 100%;
+        max-width: 280px;
+        padding: 10px 16px;
+        font-size: 14px;
+        margin: 0 auto;
         position: relative !important;
         z-index: 999 !important;
-        margin: 10px auto 0;
-        width: 90% !important;
-        max-width: 300px !important;
     }
 
     .btn-download-white {
