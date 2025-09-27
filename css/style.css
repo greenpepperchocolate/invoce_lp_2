@@ -171,6 +171,11 @@ body {
 }
 
 .btn-download-hero {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    position: relative !important;
+    z-index: 10 !important; /* ✅ 画像や他要素の下に隠れないように */
     background: #ff6b35;
     color: white;
     border: none;
@@ -212,11 +217,14 @@ body {
     align-items: center;
 }
 
+/* ヒーローセクションのCTAボタン強制表示 */
 .hero-cta-bottom {
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 20px;       /* ✅ 画像やテキストから離して衝突回避 */
+    overflow: visible !important; /* ✅ Safariでの消失防止 */
     flex: 0 0 auto;
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 .hero-cta-bottom .btn-download-hero {
